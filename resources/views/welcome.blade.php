@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ config('app.name', 'PWD') }}</title>
+    <title>{{ config('app.php', 'PWD') }}</title>
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -60,10 +60,10 @@
                     @auth
                         <a href="{{ url('/home') }}">Dashboard</a>
                     @else
-                        <a href="{{ route('login') }}">Авторизоваться</a>
+                        <a href="{{ route('login') }}">Вход</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Зарегистрироваться</a>
+                            <a href="{{ route('register') }}">Регистрация</a>
                         @endif
                     @endauth
                 @endif
