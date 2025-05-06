@@ -73,11 +73,11 @@ async function generateFileLink(fileId) {
         // 5. Генерация полной ссылки для скачивания
         const downloadUrl = `${window.location.origin}/download/${data.token}`;
         
-        // 6. Отображение результата
-        const modalElement = document.getElementById('linkModal');
-        if (!modalElement) {
-            throw new Error('Модальное окно не найдено на странице');
-        }
+        // // 6. Отображение результата
+        // const modalElement = document.getElementById('linkModal');
+        // if (!modalElement) {
+        //     throw new Error('Модальное окно не найдено на странице');
+        // }
 
         const linkInput = document.getElementById('generatedLinkInput');
         const passwordInput = document.getElementById('generatedPassword');
